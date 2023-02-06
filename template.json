@@ -7,6 +7,22 @@
     "templates": {
       "attributes": {
         "attributes": {
+          "weaponskill": {
+            "label": "ATTRIBUTE.WEAPONSKILL",
+            "rating": 0,
+            "base" : 1,
+            "bonus" : 0,
+            "cost": 0,
+            "total" : 0
+          },
+          "ballistics": {
+            "label": "ATTRIBUTE.BALLISTICS",
+            "rating": 0,
+            "base" : 1,
+            "bonus" : 0,
+            "cost": 0,
+            "total" : 0
+          },
           "strength": {
             "label": "ATTRIBUTE.STRENGTH",
             "rating": 0,
@@ -31,8 +47,16 @@
             "cost": 0,
             "total" : 0
           },
-          "initiative": {
-            "label": "ATTRIBUTE.INITIATIVE",
+          "intelligence": {
+            "label": "ATTRIBUTE.INTELLIGENCE",
+            "rating": 0,
+            "base" : 1,
+            "bonus" : 0,
+            "cost": 0,
+            "total" : 0
+          },
+          "perception": {
+            "label": "ATTRIBUTE.PERCEPTION",
             "rating": 0,
             "base" : 1,
             "bonus" : 0,
@@ -41,14 +65,6 @@
           },
           "willpower": {
             "label": "ATTRIBUTE.WILLPOWER",
-            "rating": 0,
-            "base" : 1,
-            "bonus" : 0,
-            "cost": 0,
-            "total" : 0
-          },
-          "intellect": {
-            "label": "ATTRIBUTE.INTELLECT",
             "rating": 0,
             "base" : 1,
             "bonus" : 0,
@@ -67,169 +83,487 @@
       },
       "skills": {
         "skills": {
-          "athletics": {
-            "label": "SKILL.ATHLETICS",
-            "attribute": "strength",
+          "acrobatics": {
+            "label": "SKILL.ACROBATICS",
+            "attribute": "agility",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
           "awareness": {
             "label": "SKILL.AWARENESS",
-            "attribute": "intellect",
+            "attribute": "perception",
+            "type": "basic",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "ballisticSkill": {
-            "label": "SKILL.BALLISTIC_SKILL",
+          "barter": {
+            "label": "SKILL.BARTER",
+            "attribute": "fellowship",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "blather": {
+            "label": "SKILL.BLATHER",
+            "attribute": "fellowship",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "carouse": {
+            "label": "SKILL.CAROUSE",
+            "attribute": "toughness",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "charm": {
+            "label": "SKILL.CHARM",
+            "attribute": "fellowship",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "chem-use": {
+            "label": "SKILL.CHEM-USE",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "ciphers": {
+            "label": "SKILL.CIPHERS",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "climb": {
+            "label": "SKILL.CLIMB",
+            "attribute": "strength",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "commerce": {
+            "label": "SKILL.COMMERCE",
+            "attribute": "fellowship",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "command": {
+            "label": "SKILL.COMMAND",
+            "attribute": "fellowship",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "common lore": {
+            "label": "SKILL.COMMON LORE",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "concealment": {
+            "label": "SKILL.CONCEALMENT",
             "attribute": "agility",
+            "type": "basic",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "cunning": {
-            "label": "SKILL.CUNNING",
+          "contortionist": {
+            "label": "SKILL.CONTORTIONIST",
+            "attribute": "agility",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "deceive": {
+            "label": "SKILL.DECEIVE",
             "attribute": "fellowship",
+            "type": "basic",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "deception": {
-            "label": "SKILL.DECEPTION",
+          "demolition": {
+            "label": "SKILL.DEMOLITION",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "disguise": {
+            "label": "SKILL.DISGUISE",
             "attribute": "fellowship",
+            "type": "basic",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "insight": {
-            "label": "SKILL.INSIGHT",
+          "dodge": {
+            "label": "SKILL.DODGE",
+            "attribute": "agility",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "drive": {
+            "label": "SKILL.DRIVE",
+            "attribute": "agility",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "evaluate": {
+            "label": "SKILL.EVALUATE",
+            "attribute": "intelligence",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "forbidden lore": {
+            "label": "SKILL.FORBIDDEN LORE",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "gamble": {
+            "label": "SKILL.GAMBLE",
+            "attribute": "intelligence",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "inquiry": {
+            "label": "SKILL.INQUIRY",
             "attribute": "fellowship",
+            "type": "basic",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "intimidation": {
-            "label": "SKILL.INTIMIDATION",
+          "interrogation": {
+            "label": "SKILL.INTERROGATION",
             "attribute": "willpower",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "investigation": {
-            "label": "SKILL.INVESTIGATION",
-            "attribute": "intellect",
+          "intimidate": {
+            "label": "SKILL.INTIMIDATE",
+            "attribute": "strength",
+            "type": "basic",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "leadership": {
-            "label": "SKILL.LEADERSHIP",
+          "invocation": {
+            "label": "SKILL.INVOCATION",
             "attribute": "willpower",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
+          },
+          "literacy": {
+            "label": "SKILL.LITERACY",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "logic": {
+            "label": "SKILL.LOGIC",
+            "attribute": "intelligence",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
           },
           "medicae": {
             "label": "SKILL.MEDICAE",
-            "attribute": "intellect",
+            "attribute": "intelligence",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "persuasion": {
-            "label": "SKILL.PERSUASION",
-            "attribute": "fellowship",
+          "navigation": {
+            "label": "SKILL.NAVIGATION",
+            "attribute": "intelligence",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
+          },
+          "performer": {
+            "label": "SKILL.PERFORMER",
+            "attribute": "fellowship",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
           },
           "pilot": {
             "label": "SKILL.PILOT",
             "attribute": "agility",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "psychicMastery": {
-            "label": "SKILL.PSYCHIC_MASTERY",
-            "attribute": "willpower",
+          "psyniscience": {
+            "label": "SKILL.PSYNISCIENCE",
+            "attribute": "perception",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "scholar": {
-            "label": "SKILL.SCHOLAR",
-            "attribute": "intellect",
+          "scholastic lore": {
+            "label": "SKILL.SCHOLASTIC LORE",
+            "attribute": "intelligence",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "stealth": {
-            "label": "SKILL.STEALTH",
+          "scrutiny": {
+            "label": "SKILL.SCRUTINY",
+            "attribute": "perception",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "search": {
+            "label": "SKILL.SEARCH",
+            "attribute": "perception",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "secret": {
+            "label": "SKILL.SECRET",
+            "attribute": "advanced",
+            "type": "tongue",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "security": {
+            "label": "SKILL.SECURITY",
             "attribute": "agility",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
+          },
+          "shadowing": {
+            "label": "SKILL.SHADOWING",
+            "attribute": "agility",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "silent move": {
+            "label": "SKILL.SILENT MOVE",
+            "attribute": "agility",
+            "type": "basic",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "sleight of hand": {
+            "label": "SKILL.SLEIGHT OF HAND",
+            "attribute": "agility",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "speak": {
+            "label": "SKILL.SPEAK",
+            "attribute": "advanced",
+            "type": "language",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
           },
           "survival": {
             "label": "SKILL.SURVIVAL",
-            "attribute": "willpower",
+            "attribute": "intelligence",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "tech": {
-            "label": "SKILL.TECH",
-            "attribute": "intellect",
+          "swim": {
+            "label": "SKILL.SWIM",
+            "attribute": "strength",
+            "type": "basic",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
           },
-          "weaponSkill": {
-            "label": "SKILL.WEAPON_SKILL",
-            "attribute": "initiative",
+          "tech-use": {
+            "label": "SKILL.TECH-USE",
+            "attribute": "intelligence",
+            "type": "advanced",
             "rating": 0,
-            "base" : 0,
-            "bonus" : 0,
+            "base": 0,
+            "bonus": 0,
             "cost": 0,
-            "total" : 0
+            "total": 0
+          },
+          "tracking": {
+            "label": "SKILL.TRACKING",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "trade": {
+            "label": "SKILL.TRADE",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
+          },
+          "wrangling": {
+            "label": "SKILL.WRANGLING",
+            "attribute": "intelligence",
+            "type": "advanced",
+            "rating": 0,
+            "base": 0,
+            "bonus": 0,
+            "cost": 0,
+            "total": 0
           }
-        }
+    }
       },
       "combat": {
         "combat": {

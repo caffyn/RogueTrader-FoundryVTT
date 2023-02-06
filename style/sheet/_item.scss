@@ -1,49 +1,49 @@
-.wrath-and-glory.sheet.item form {
+.rogue-trader.sheet.item form {
   height: 100%
 }
 
-.wrath-and-glory.sheet.item .tab[data-tab="stats"] {
+.rogue-trader.sheet.item .tab[data-tab="stats"] {
   height: calc(100% - 150px)
 }
 
-  .wrath-and-glory.sheet.item .tab[data-tab="description"] {
+  .rogue-trader.sheet.item .tab[data-tab="description"] {
   height: 100%
 }
 
-.wrath-and-glory.sheet.item .description {
+.rogue-trader.sheet.item .description {
   height: 100%
 }
 
-.wrath-and-glory.sheet.item .species,
-.wrath-and-glory.sheet.item .faction,
-.wrath-and-glory.sheet.item .archetype,
-.wrath-and-glory.sheet.item .ability,
-.wrath-and-glory.sheet.item .ammo,
-.wrath-and-glory.sheet.item .armour,
-.wrath-and-glory.sheet.item .ascension,
-.wrath-and-glory.sheet.item .augmentic,
-.wrath-and-glory.sheet.item .gear,
-.wrath-and-glory.sheet.item .keyword,
-.wrath-and-glory.sheet.item .memorable-injury,
-.wrath-and-glory.sheet.item .mutation,
-.wrath-and-glory.sheet.item .psychic-power,
-.wrath-and-glory.sheet.item .talent,
-.wrath-and-glory.sheet.item .traumatic-injury,
-.wrath-and-glory.sheet.item .weapon,
-.wrath-and-glory.sheet.item .weapon-upgrade {
+.rogue-trader.sheet.item .species,
+.rogue-trader.sheet.item .faction,
+.rogue-trader.sheet.item .archetype,
+.rogue-trader.sheet.item .ability,
+.rogue-trader.sheet.item .ammo,
+.rogue-trader.sheet.item .armour,
+.rogue-trader.sheet.item .ascension,
+.rogue-trader.sheet.item .augmentic,
+.rogue-trader.sheet.item .gear,
+.rogue-trader.sheet.item .keyword,
+.rogue-trader.sheet.item .memorable-injury,
+.rogue-trader.sheet.item .mutation,
+.rogue-trader.sheet.item .psychic-power,
+.rogue-trader.sheet.item .talent,
+.rogue-trader.sheet.item .traumatic-injury,
+.rogue-trader.sheet.item .weapon,
+.rogue-trader.sheet.item .weapon-upgrade {
   width: 100%;
   height: 100%;
 }
 
 
-.wrath-and-glory.sheet.item .description .editor {
+.rogue-trader.sheet.item .description .editor {
   min-height: 200px;
 }
 
 
 /* HEADER */
 
-.wrath-and-glory.sheet.item .sheet-header {
+.rogue-trader.sheet.item .sheet-header {
   display: grid;
   grid-template-columns: 100px auto;
   grid-template-rows: 100px;
@@ -53,20 +53,20 @@
   height: 100px;
 }
 
-.wrath-and-glory.sheet.item .sheet-header .avatar {
+.rogue-trader.sheet.item .sheet-header .avatar {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
   border: 8px solid transparent;
   border-image: var(--image-border) 8 8 8 8 repeat repeat;
 }
 
-.wrath-and-glory.sheet.item .sheet-header .avatar img {
+.rogue-trader.sheet.item .sheet-header .avatar img {
   border: 0 none;
   height: 100%;
   object-fit: cover;
 }
 
-.wrath-and-glory.sheet.item .sheet-header .bio {
+.rogue-trader.sheet.item .sheet-header .bio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -74,23 +74,23 @@
   align-items: center;
 }
 
-.wrath-and-glory.sheet.item .sheet-header .bio .wrapper-row {
+.rogue-trader.sheet.item .sheet-header .bio .wrapper-row {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
 }
 
-.wrath-and-glory.sheet.item .sheet-header .bio label {
+.rogue-trader.sheet.item .sheet-header .bio label {
   min-width: 100px;
   max-width: 100px;
   height: 31px;
 }
 
-.wrath-and-glory.sheet.item .sheet-header .bio input {
+.rogue-trader.sheet.item .sheet-header .bio input {
   flex-grow: 1;
 }
 
-.wrath-and-glory.sheet.item .sheet-header .bio .name {
+.rogue-trader.sheet.item .sheet-header .bio .name {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
@@ -98,7 +98,7 @@
 
 /* TABS */
 
-.wrath-and-glory.sheet.item .sheet-tabs {
+.rogue-trader.sheet.item .sheet-tabs {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -111,7 +111,7 @@
   border-image: var(--image-border) 8 8 8 8 repeat repeat;
 }
 
-.wrath-and-glory.sheet.item .sheet-tabs .item {
+.rogue-trader.sheet.item .sheet-tabs .item {
   color: var(--color-white);
   background-color: var(--color-black);
   cursor: pointer;
@@ -119,22 +119,22 @@
   flex: 1
 }
 
-.wrath-and-glory.sheet.item .sheet-tabs .item:hover,
-.wrath-and-glory.sheet.item .sheet-tabs .item.active  {
+.rogue-trader.sheet.item .sheet-tabs .item:hover,
+.rogue-trader.sheet.item .sheet-tabs .item.active  {
   background-color: var(--color-red);
   text-shadow: none;
 }
 
 /* BODY */
 
-.wrath-and-glory.sheet.item .sheet-body {
+.rogue-trader.sheet.item .sheet-body {
   width: 100%;
   height: calc(100% - 165px);
   overflow: auto;
 }
 
-.wrath-and-glory.sheet.item .editor,
-.wrath-and-glory.sheet.item .editor-content {
+.rogue-trader.sheet.item .editor,
+.rogue-trader.sheet.item .editor-content {
   font-family: var(--font-text);
   font-size: 14px;
   color: var(--color-text);
@@ -144,97 +144,97 @@
   box-shadow: inset 0 0 6px var(--color-dark-grey);
 }
 
-.wrath-and-glory.sheet.item .editor {
+.rogue-trader.sheet.item .editor {
   border: 1px solid var(--color-black);
 }
 
-.wrath-and-glory.sheet.item .editor-content {
+.rogue-trader.sheet.item .editor-content {
   padding: 8px;
   color: var(--color-black);
 }
 
-.wrath-and-glory.sheet.item .prosemirror .editor-container {
+.rogue-trader.sheet.item .prosemirror .editor-container {
   margin: 0px;
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper {
+.rogue-trader.sheet.sheet.item .wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 5px
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper > *{
+.rogue-trader.sheet.sheet.item .wrapper > *{
   width: 100%
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper > h1{
+.rogue-trader.sheet.sheet.item .wrapper > h1{
   width: unset
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper .item-form-group{
+.rogue-trader.sheet.sheet.item .wrapper .item-form-group{
   display: flex;
   flex-direction: row;
   width: fit-content;
   flex: 1
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper .item-form-group.static{
+.rogue-trader.sheet.sheet.item .wrapper .item-form-group.static{
   flex: unset
 }
 
 
-.wrath-and-glory.sheet.sheet.item .wrapper .item-form-group.stacked{
+.rogue-trader.sheet.sheet.item .wrapper .item-form-group.stacked{
   flex-direction: column;
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper .item-form-inputs{
+.rogue-trader.sheet.sheet.item .wrapper .item-form-inputs{
   width: 100%;
   display:flex;
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper .item-form-inputs.small{
+.rogue-trader.sheet.sheet.item .wrapper .item-form-inputs.small{
   width: 50px;
 }
 
-.wrath-and-glory.sheet.sheet.item .wrapper .item-form-inputs.medium{
+.rogue-trader.sheet.sheet.item .wrapper .item-form-inputs.medium{
   width: 100px
 }
 
-.wrath-and-glory.sheet.item .wrapper  input,
-.wrath-and-glory.sheet.item .wrapper  select,
-.wrath-and-glory.sheet.item .wrapper  label {
+.rogue-trader.sheet.item .wrapper  input,
+.rogue-trader.sheet.item .wrapper  select,
+.rogue-trader.sheet.item .wrapper  label {
   height: 31px;
   cursor: default;
 }
 
-.wrath-and-glory.sheet.item .wrapper .item-form-group.fixed label{
+.rogue-trader.sheet.item .wrapper .item-form-group.fixed label{
   width: 150px;
 }
 
 
-.wrath-and-glory.sheet.item .wrapper  label {
+.rogue-trader.sheet.item .wrapper  label {
   white-space: nowrap;
 }
 
-.wrath-and-glory.sheet.item .wrapper .damage-header {
+.rogue-trader.sheet.item .wrapper .damage-header {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
   text-align: center;
 }
 
-.wrath-and-glory.sheet.item .wrapper .damage-header .spacer {
+.rogue-trader.sheet.item .wrapper .damage-header .spacer {
   min-width: 114px;
   max-width: 114px;
 }
 
-.wrath-and-glory.sheet.item .wrapper .damage-header .rank {
+.rogue-trader.sheet.item .wrapper .damage-header .rank {
   flex: 1.5
 }
 
-.wrath-and-glory.sheet.item .wrapper .damage-header .base,
-.wrath-and-glory.sheet.item .wrapper .damage-header .modifier {
+.rogue-trader.sheet.item .wrapper .damage-header .base,
+.rogue-trader.sheet.item .wrapper .damage-header .modifier {
   flex: 1
 }
 
@@ -254,48 +254,48 @@
 }
 
 
-.wrath-and-glory.sheet.item .sheet-body .wrapper-title .wrapper {
+.rogue-trader.sheet.item .sheet-body .wrapper-title .wrapper {
   flex-wrap: wrap;
 }
 
-.wrath-and-glory.sheet.item .sheet-body .wrapper-title .wrapper .stat {
+.rogue-trader.sheet.item .sheet-body .wrapper-title .wrapper .stat {
   display: flex;
   flex-direction: row;
   flex-basis: calc(50% - 4px);
   margin-top: 4px;
 }
 
-.wrath-and-glory.sheet.item .sheet-body .wrapper-title .wrapper .stat:nth-child(even) {
+.rogue-trader.sheet.item .sheet-body .wrapper-title .wrapper .stat:nth-child(even) {
   margin-left: 4px;
 }
 
-.wrath-and-glory.sheet.item .sheet-body .wrapper-title .wrapper .stat:nth-child(odd) {
+.rogue-trader.sheet.item .sheet-body .wrapper-title .wrapper .stat:nth-child(odd) {
   margin-right: 4px;
 }
 
 
-.wrath-and-glory.sheet.item .mutation .sheet-body .wrapper .effect {
+.rogue-trader.sheet.item .mutation .sheet-body .wrapper .effect {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
 }
 
-  .wrath-and-glory.sheet.item .wrapper.potency {
+  .rogue-trader.sheet.item .wrapper.potency {
     flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 
-.wrath-and-glory.sheet.item .wrapper.potency .potency-header{
+.rogue-trader.sheet.item .wrapper.potency .potency-header{
  display: flex; 
  justify-content: center;
  font-weight:bold
 }
 
-.wrath-and-glory.sheet.item .objectives button,
-.wrath-and-glory.sheet.item .faction-backgrounds button,
-  .wrath-and-glory.sheet.item .wrapper.potency button{
+.rogue-trader.sheet.item .objectives button,
+.rogue-trader.sheet.item .faction-backgrounds button,
+  .rogue-trader.sheet.item .wrapper.potency button{
   height: 20px;
   width: 20px;
   margin: 3px;
@@ -307,31 +307,31 @@
   font-size: 20px;
  }
 
-.wrath-and-glory.sheet.item .potency-list{
+.rogue-trader.sheet.item .potency-list{
   display: flex;
   flex-direction: column;
 }
 
-.wrath-and-glory.sheet.item .potency-fields{
+.rogue-trader.sheet.item .potency-fields{
   display: flex;
   text-align: center;
 }
  
-.wrath-and-glory.sheet.item .potency-fields > *{
+.rogue-trader.sheet.item .potency-fields > *{
   flex: 1;
 }
  
-.wrath-and-glory.sheet.item .potency-fields > a{
+.rogue-trader.sheet.item .potency-fields > a{
   flex: 0 0 20px;
 }
 
-.wrath-and-glory.sheet.item .potency-fields > .wng-checkbox{
+.rogue-trader.sheet.item .potency-fields > .wng-checkbox{
   flex: 0 0 31px;
 }
 
 
-.wrath-and-glory.sheet.item .background .background-delete,
-  .wrath-and-glory.sheet.item .potency-content .potency-fields > a{
+.rogue-trader.sheet.item .background .background-delete,
+  .rogue-trader.sheet.item .potency-content .potency-fields > a{
 text-align: center;
 color: white;
 background: black;
@@ -341,15 +341,15 @@ display: flex;
 justify-content: center;
 }
 
-.wrath-and-glory.sheet.item .background .background-delete:hover,
-.wrath-and-glory.sheet.item .potency-content  .potency-fields > a:hover{
+.rogue-trader.sheet.item .background .background-delete:hover,
+.rogue-trader.sheet.item .potency-content  .potency-fields > a:hover{
   background: var(--color-imperium)
 }
  
  
  
 
-.wrath-and-glory.sheet.item .wrapper.benefits {
+.rogue-trader.sheet.item .wrapper.benefits {
   height: 100%;
   justify-content: center;
 }
@@ -357,25 +357,25 @@ justify-content: center;
 
 /* WEAPON UPGRADE */
 
-.wrath-and-glory.sheet.item .weapon-upgrade .description .editor {
+.rogue-trader.sheet.item .weapon-upgrade .description .editor {
   height: 200px;
 }
 
-.wrath-and-glory.sheet.item .weapon-upgrade .sheet-body .wrapper .effect,
-.wrath-and-glory.sheet.item .weapon-upgrade .sheet-body .wrapper .keywords {
+.rogue-trader.sheet.item .weapon-upgrade .sheet-body .wrapper .effect,
+.rogue-trader.sheet.item .weapon-upgrade .sheet-body .wrapper .keywords {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
 }
 
-.wrath-and-glory.sheet.item .weapon-upgrade .sheet-body .wrapper .value {
+.rogue-trader.sheet.item .weapon-upgrade .sheet-body .wrapper .value {
   display: flex;
   flex-direction: row;
   flex-basis: calc(50% - 4px);
   margin-right: 4px;
 }
 
-.wrath-and-glory.sheet.item .weapon-upgrade .sheet-body .wrapper .rarity {
+.rogue-trader.sheet.item .weapon-upgrade .sheet-body .wrapper .rarity {
   display: flex;
   flex-direction: row;
   flex-basis: calc(50% - 4px);
@@ -383,48 +383,48 @@ justify-content: center;
 }
 
 
-.wrath-and-glory.sheet.item .species,
-  .wrath-and-glory.sheet.item .archetype{
+.rogue-trader.sheet.item .species,
+  .rogue-trader.sheet.item .archetype{
  height: 100%
 }
 
-.wrath-and-glory.sheet.item .species .sheet-body,
-  .wrath-and-glory.sheet.item .archetype .sheet-body {
+.rogue-trader.sheet.item .species .sheet-body,
+  .rogue-trader.sheet.item .archetype .sheet-body {
   margin-top: 5px;
   height: calc(100% - 105px)
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-skills,
-  .wrath-and-glory.sheet.item .wrapper.item-attributes {
+.rogue-trader.sheet.item .wrapper.item-skills,
+  .rogue-trader.sheet.item .wrapper.item-attributes {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-attributes .item-form-inputs {
+.rogue-trader.sheet.item .wrapper.item-attributes .item-form-inputs {
   width: unset;
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-skills .item-form-inputs input,
-  .wrath-and-glory.sheet.item .wrapper.item-attributes .item-form-inputs input{
+.rogue-trader.sheet.item .wrapper.item-skills .item-form-inputs input,
+  .rogue-trader.sheet.item .wrapper.item-attributes .item-form-inputs input{
   border: 1px solid black;
   flex: 1;
 }
 
 
 
-.wrath-and-glory.sheet.item .wrapper.item-attributes .item-form-groups {
+.rogue-trader.sheet.item .wrapper.item-attributes .item-form-groups {
   flex-direction: row;
   display: flex;
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-attributes .item-form-group {
+.rogue-trader.sheet.item .wrapper.item-attributes .item-form-group {
   flex-direction: column;
   display: flex;
   margin: 5px;
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-skills .item-form-groups {
+.rogue-trader.sheet.item .wrapper.item-skills .item-form-groups {
   height: 340px;
   display: flex;
   flex-direction: column;
@@ -433,24 +433,24 @@ justify-content: center;
   margin-top: 3px;
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-skills .item-form-groups .item-form-group {
+.rogue-trader.sheet.item .wrapper.item-skills .item-form-groups .item-form-group {
   margin: 3px;
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-skills .item-form-groups label{
+.rogue-trader.sheet.item .wrapper.item-skills .item-form-groups label{
   width: 125px;
 }
 
-.wrath-and-glory.sheet.item .wrapper.item-skills .item-form-groups .item-form-inputs{
+.rogue-trader.sheet.item .wrapper.item-skills .item-form-groups .item-form-inputs{
   width: 100px;
 }
 
 
-.wrath-and-glory.sheet.item .archetype .wrapper.wargear {
+.rogue-trader.sheet.item .archetype .wrapper.wargear {
   flex-direction: column;
 }
 
-.wrath-and-glory.sheet.item .archetype .wrapper.wargear .wargear-list {
+.rogue-trader.sheet.item .archetype .wrapper.wargear .wargear-list {
   background: url(./asset/image/input.webp) repeat;
   min-height: 200px;
   box-shadow: inset 0 0 20px var(--color-dark-grey);
@@ -458,8 +458,8 @@ justify-content: center;
   width:unset;
 }
 
-.wrath-and-glory.sheet.item .species .species-item-list,
-  .wrath-and-glory.sheet.item .archetype .archetype-item-list {
+.rogue-trader.sheet.item .species .species-item-list,
+  .rogue-trader.sheet.item .archetype .archetype-item-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,13 +478,13 @@ justify-content: center;
 
 
 
-.wrath-and-glory.sheet.item .archetype .wargear-list{
+.rogue-trader.sheet.item .archetype .wargear-list{
   padding: 5px;
 }
 
 
 
-.wrath-and-glory.sheet .group-wrapper,
+.rogue-trader.sheet .group-wrapper,
 #archetype-groups .group-wrapper {
     display: flex;
 }
@@ -499,13 +499,13 @@ justify-content: center;
     display: flex;
 }
 
-.wrath-and-glory.sheet .group-wrapper .group
+.rogue-trader.sheet .group-wrapper .group
 {
     padding: 2px;
     display: flex;
 }
 
-.wrath-and-glory.sheet .group-wrapper .group-list,
+.rogue-trader.sheet .group-wrapper .group-list,
 #archetype-groups .group-list
 {
     display: flex;
@@ -522,22 +522,22 @@ justify-content: center;
     font-weight: bold;
 }
 
-.wrath-and-glory.sheet .group .wargear {
+.rogue-trader.sheet .group .wargear {
     width: fit-content;
     font-weight: bold;
 }
 
-.wrath-and-glory.sheet .connector {
+.rogue-trader.sheet .connector {
   margin: 0px 5px;
 }
 
 
-.wrath-and-glory.sheet .comma {
+.rogue-trader.sheet .comma {
   margin-left: 0px;
   margin-right: 5px;
 }
 
-.wrath-and-glory.sheet .group .wargear:hover,
+.rogue-trader.sheet .group .wargear:hover,
 #archetype-groups .group .wargear:hover
 {   
     cursor: pointer;
@@ -551,14 +551,14 @@ justify-content: center;
 }
 
 
-.wrath-and-glory.sheet .faction h1,
-  .wrath-and-glory.sheet .archetype .wargear h1 {
+.rogue-trader.sheet .faction h1,
+  .rogue-trader.sheet .archetype .wargear h1 {
   display: flex;
   justify-content: center;
 }
 
 
-.wrath-and-glory.sheet .archetype button {
+.rogue-trader.sheet .archetype button {
   height: 20px;
   width: 20px;
   margin: 3px;
@@ -570,16 +570,16 @@ justify-content: center;
   font-size: 14px;
 }
 
-.wrath-and-glory.sheet .archetype button > i{
+.rogue-trader.sheet .archetype button > i{
   margin: 0px;
 }
 
 
-.wrath-and-glory.sheet .objectives,
-.wrath-and-glory.sheet .objectives .objectives-list,
-.wrath-and-glory.sheet .faction-backgrounds .backgrounds,
-.wrath-and-glory.sheet .faction-backgrounds .backgrounds .background-list,
-  .wrath-and-glory.sheet .faction-backgrounds {
+.rogue-trader.sheet .objectives,
+.rogue-trader.sheet .objectives .objectives-list,
+.rogue-trader.sheet .faction-backgrounds .backgrounds,
+.rogue-trader.sheet .faction-backgrounds .backgrounds .background-list,
+  .rogue-trader.sheet .faction-backgrounds {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -587,34 +587,34 @@ justify-content: center;
 }
 
 
-.wrath-and-glory.sheet .faction-backgrounds .background {
+.rogue-trader.sheet .faction-backgrounds .background {
   display: flex;
   width: 100%;
   align-items: center;
   margin: 3px;
 }
 
-.wrath-and-glory.sheet .faction-backgrounds .bg-effect,
-  .wrath-and-glory.sheet .faction-backgrounds .bg-name {
+.rogue-trader.sheet .faction-backgrounds .bg-effect,
+  .rogue-trader.sheet .faction-backgrounds .bg-name {
   flex: 0.3
 }
 
-.wrath-and-glory.sheet .faction-backgrounds .bg-description {
+.rogue-trader.sheet .faction-backgrounds .bg-description {
   flex: 1
 }
 
-.wrath-and-glory.sheet .faction-backgrounds .background-delete {
+.rogue-trader.sheet .faction-backgrounds .background-delete {
   flex: 0 0 20px;
   height: 31px;
 }
 
-.wrath-and-glory.sheet .faction-backgrounds .background-header {
+.rogue-trader.sheet .faction-backgrounds .background-header {
   display: flex;
   width: 100%;
   text-align: center
 }
 
-.wrath-and-glory.sheet .objectives .objective {
+.rogue-trader.sheet .objectives .objective {
   margin: 3px;
 }
 

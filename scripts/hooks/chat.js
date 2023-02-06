@@ -6,12 +6,12 @@ export default function() {
     })
 
     Hooks.on("renderChatMessage", (message, html) => {
-        let item = html.find(".wrath-and-glory.chat.item")
+        let item = html.find(".rogue-trader.chat.item")
         if (item.length)
         {
             item.attr("draggable", true)
             item[0].addEventListener("dragstart", ev => {
-                ev.dataTransfer.setData("text/plain", JSON.stringify({type : "itemFromChat", payload : message.getFlag("wrath-and-glory", "itemData")}))
+                ev.dataTransfer.setData("text/plain", JSON.stringify({type : "itemFromChat", payload : message.getFlag("rogue-trader", "itemData")}))
             })
         }
 

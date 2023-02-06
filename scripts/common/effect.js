@@ -122,10 +122,10 @@ export default class WrathAndGloryEffect extends ActiveEffect {
     }
 
     get changeConditionals() {
-        return (getProperty(this, "flags.wrath-and-glory.changeCondition") || {})
+        return (getProperty(this, "flags.rogue-trader.changeCondition") || {})
     }
     get description() {
-        return getProperty(this, "flags.wrath-and-glory.description")
+        return getProperty(this, "flags.rogue-trader.description")
     }
 
     get hasRollEffect() {

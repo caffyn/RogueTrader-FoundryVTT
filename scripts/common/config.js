@@ -242,12 +242,12 @@ WNG.systemEffects = {
     "wounded" : {
         id : "wounded",
         label : "EFFECT.Wounded",
-        icon : "systems/wrath-and-glory/asset/icons/wounded.svg",
+        icon : "systems/rogue-trader/asset/icons/wounded.svg",
         changes : [
             {key: "difficulty.base", mode : 6, value : 1}
         ],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "+1 DN to all Tests", script : "return true"}
             }
         }
@@ -255,7 +255,7 @@ WNG.systemEffects = {
     "full-defence" : {
         id : "full-defence",
         label : "EFFECT.FullDefence",
-        icon : "systems/wrath-and-glory/asset/icons/full-defence.svg",
+        icon : "systems/rogue-trader/asset/icons/full-defence.svg",
         changes : [
             {key: "data.combat.defence.bonus", mode : 2, value : 1},
         ],
@@ -263,13 +263,13 @@ WNG.systemEffects = {
     "all-out-attack" : {
         id : "all-out-attack",
         label : "EFFECT.AllOutAttack",
-        icon : "systems/wrath-and-glory/asset/icons/all-out-attack.svg",
+        icon : "systems/rogue-trader/asset/icons/all-out-attack.svg",
         changes : [
             {key: "pool.bonus", mode : 6, value : 2},
             {key: "data.combat.defence.bonus", mode : 2, value : -2},
         ],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "+2 bonus dice to melee", script : "return data.weapon && data.weapon.isMelee"}
             }
         }
@@ -281,17 +281,17 @@ CONFIG.statusEffects = [
     {
         id : "bleeding",
         label : "CONDITION.Bleeding",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/bleeding.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/bleeding.svg",
     },
     {
         id : "blinded",
         label : "CONDITION.Blinded",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/blinded.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/blinded.svg",
         changes : [
             {key: "difficulty.base", mode : 6, value : 4}
         ],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "Blinded", script : "return data.weapon"}
             }
         }
@@ -299,17 +299,17 @@ CONFIG.statusEffects = [
     {
         id : "exhausted",
         label : "CONDITION.Exhausted",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/exhausted.svg"
+        icon : "systems/rogue-trader/asset/icons/conditions/exhausted.svg"
     },
     {
         id : "fear",
         label : "CONDITION.Fear",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/fear.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/fear.svg",
         changes : [
             {key: "difficulty.base", mode : 6, value : 2}
         ],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "+2 DN to all Tests", script : "return true"}
             }
         }
@@ -317,18 +317,18 @@ CONFIG.statusEffects = [
     {
         id : "frenzied",
         label : "CONDITION.Frenzied",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/frenzied.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/frenzied.svg",
         changes : [{key: "data.attributes.strength.bonus", mode : 2, value : 1}]
     },
     {
         id : "hindered",
         label : "CONDITION.Hindered",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/hindered.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/hindered.svg",
         changes : [
             {key: "difficulty.base", mode : 6, value : 1}
         ],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "+DN to all Tests", script : "return true"}
             }
         }
@@ -336,15 +336,15 @@ CONFIG.statusEffects = [
     {
         id : "onfire",
         label : "CONDITION.OnFire",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/onfire.svg"
+        icon : "systems/rogue-trader/asset/icons/conditions/onfire.svg"
     },
     {
         id : "pinned",
         label : "CONDITION.Pinned",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/pinned.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/pinned.svg",
         changes : [{key: "difficulty.base", mode : 6, value : 2}],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "Pinned: Ballistic Skill Test Penalty", script : ""}
             }
         }
@@ -352,10 +352,10 @@ CONFIG.statusEffects = [
     {
         id : "poisoned",
         label : "CONDITION.Poisoned",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/poisoned.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/poisoned.svg",
         changes : [{key: "difficulty.base", mode : 6, value : 2}],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "+DN to all Tests", script : "return true"}
             }
         }
@@ -363,27 +363,27 @@ CONFIG.statusEffects = [
     {
         id : "prone",
         label : "CONDITION.Prone",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/prone.svg"
+        icon : "systems/rogue-trader/asset/icons/conditions/prone.svg"
     },
     {
         id : "restrained",
         label : "CONDITION.Restrained",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/restrained.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/restrained.svg",
         changes : [{key: "data.combat.defence.bonus", mode : 2, value : -2},{key: "data.combat.speed", mode : 5, value : "0"} ]
     },
     {
         id : "staggered",
         label : "CONDITION.Staggered",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/staggered.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/staggered.svg",
         changes : [{key: "data.combat.speed", mode : 1, value : 0.5} ]
     },
     {
         id : "terror",
         label : "CONDITION.Terror",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/terror.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/terror.svg",
         changes : [{key: "difficulty.base", mode : 6, value : 2}],
         flags : { 
-            "wrath-and-glory.changeCondition" : { 
+            "rogue-trader.changeCondition" : { 
                 0 : {description : "+2 DN to all Tests", script : "return true"}
             }
         }
@@ -391,18 +391,18 @@ CONFIG.statusEffects = [
     {
         id : "vulnerable",
         label : "CONDITION.Vulnerable",
-        icon : "systems/wrath-and-glory/asset/icons/conditions/vulnerable.svg",
+        icon : "systems/rogue-trader/asset/icons/conditions/vulnerable.svg",
         changes : [{key: "data.combat.defence.bonus", mode : 2, value : -1}]
     },
     {
         id : "dying",
         label : "CONDITION.Dying",
-        icon : "systems/wrath-and-glory/asset/icons/dying.svg"
+        icon : "systems/rogue-trader/asset/icons/dying.svg"
     },
     {
         id : "dead",
         label : "CONDITION.Dead",
-        icon : "systems/wrath-and-glory/asset/icons/dead.svg"
+        icon : "systems/rogue-trader/asset/icons/dead.svg"
     }
     
 ]

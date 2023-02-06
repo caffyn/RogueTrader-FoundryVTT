@@ -40,10 +40,10 @@ Hooks.once("init", () => {
   CONFIG.Item.documentClass = WrathAndGloryItem;
   CONFIG.ActiveEffect.documentClass = WrathAndGloryEffect;
   CONFIG.ActiveEffect.sheetClass = WrathAndGloryEffectSheet;
-  DocumentSheetConfig.registerSheet(JournalEntryPage, "wrath-and-glory", Level4TextPageSheet, { types : ["text"], makeDefault: true, label : "W&G Journal Sheet" });
+  DocumentSheetConfig.registerSheet(JournalEntryPage, "rogue-trader", Level4TextPageSheet, { types : ["text"], makeDefault: true, label : "W&G Journal Sheet" });
 
   
-  if (game.settings.get("wrath-and-glory", "initiativeRollOption"))
+  if (game.settings.get("rogue-trader", "initiativeRollOption"))
   {
     CONFIG.Combat.documentClass = WrathAndGloryOptionalCombat;
   }
@@ -89,11 +89,11 @@ Hooks.once("init", () => {
   game.wng.config = WNG
   CONFIG.Combat.initiative = { formula: "(@attributes.initiative.total)dp", decimals: 0 };
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("wrath-and-glory", AgentSheet, { types: ["agent"], makeDefault: true });
-  Actors.registerSheet("wrath-and-glory", ThreatSheet, { types: ["threat"], makeDefault: true });
+  Actors.registerSheet("rogue-trader", AgentSheet, { types: ["agent"], makeDefault: true });
+  Actors.registerSheet("rogue-trader", ThreatSheet, { types: ["threat"], makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("wrath-and-glory", WrathAndGloryItemSheet, {makeDefault : true});
-  DocumentSheetConfig.registerSheet(ActiveEffect, "wrath-and-glory", WrathAndGloryEffectSheet, {makeDefault: true, label : "Wrath & Glory Active Effect Config"})
+  Items.registerSheet("rogue-trader", WrathAndGloryItemSheet, {makeDefault : true});
+  DocumentSheetConfig.registerSheet(ActiveEffect, "rogue-trader", WrathAndGloryEffectSheet, {makeDefault: true, label : "Wrath & Glory Active Effect Config"})
   initializeHandlebars();
 
   CONFIG.fontDefinitions.Priori = {editor : true, fonts : []}

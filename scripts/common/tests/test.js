@@ -25,11 +25,11 @@ export class WNGTest {
   }
 
   get template() {
-    return "systems/wrath-and-glory/template/chat/roll/common/common-roll.html"
+    return "systems/rogue-trader/template/chat/roll/common/common-roll.html"
   }
 
   get damageTemplate() {
-    return "systems/wrath-and-glory/template/chat/roll/damage/damage-roll.html"
+    return "systems/rogue-trader/template/chat/roll/damage/damage-roll.html"
   }
 
   static recreate(data) {
@@ -281,7 +281,7 @@ export class WNGTest {
 
 
   handleCounters() {
-    if (this.result.isWrathCritical && !this.context.counterChanged && this.actor.getFlag("wrath-and-glory", "generateMetaCurrencies")) {
+    if (this.result.isWrathCritical && !this.context.counterChanged && this.actor.getFlag("rogue-trader", "generateMetaCurrencies")) {
       this.context.counterChanged = true
       if (this.actor.type == "agent")
         game.wng.RuinGloryCounter.changeCounter(1, "glory").then(() => { game.counter.render(true) })
@@ -332,7 +332,7 @@ export class WNGTest {
     let chatData = {
       type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       roll: this.roll,
-      flags: { "wrath-and-glory.testData": this.data },
+      flags: { "rogue-trader.testData": this.data },
       user: game.user.id,
       rollMode: game.settings.get("core", "rollMode"),
       content: html,
@@ -346,7 +346,7 @@ export class WNGTest {
     }
     if (newMessage || !this.message) {
       return ChatMessage.create(chatData).then(msg => {
-        msg.update({ "flags.wrath-and-glory.testData.context.messageId": msg.id })
+        msg.update({ "flags.rogue-trader.testData.context.messageId": msg.id })
       });
     }
     else {
@@ -358,7 +358,7 @@ export class WNGTest {
   // Update message data without rerendering the message content
   updateMessageFlags() {
     if (this.message)
-      return this.message.update({ "flags.wrath-and-glory.testData": this.data })
+      return this.message.update({ "flags.rogue-trader.testData": this.data })
   }
 
   _countShifting() {
@@ -480,7 +480,7 @@ export class WNGTest {
     let chatData = {
       type: CONST.CHAT_MESSAGE_TYPES.ROLL,
       roll: this.damageRoll,
-      flags: { "wrath-and-glory.testData": this.data },
+      flags: { "rogue-trader.testData": this.data },
       user: game.user.id,
       rollMode: game.settings.get("core", "rollMode"),
       content: html,
@@ -587,7 +587,7 @@ export class PoolDie extends Die {
     if (game.modules.get("wng-core") && game.modules.get("wng-core").active)
       roll.img = `modules/wng-core/assets/dice/die-pool-${roll.result}.webp`
     else
-      roll.img = `systems/wrath-and-glory/asset/image/die-pool-${roll.result}.webp`
+      roll.img = `systems/rogue-trader/asset/image/die-pool-${roll.result}.webp`
   }
 
 
@@ -658,7 +658,7 @@ export class WrathDie extends Die {
     if (game.modules.get("wng-core") && game.modules.get("wng-core").active)
       roll.img = `modules/wng-core/assets/dice/die-wrath-${roll.result}.webp`
     else
-      roll.img = `systems/wrath-and-glory/asset/image/die-wrath-${roll.result}.webp`
+      roll.img = `systems/rogue-trader/asset/image/die-wrath-${roll.result}.webp`
   }
 
 

@@ -6,7 +6,7 @@ import { WrathAndGloryItem } from "../item.js";
 export class WrathAndGloryItemSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["wrath-and-glory", "sheet", "item"],
+      classes: ["rogue-trader", "sheet", "item"],
       resizable: true,
       scrollY: [".sheet-body"],
       width: 650,
@@ -28,7 +28,7 @@ export class WrathAndGloryItemSheet extends ItemSheet {
   }
 
   get template() {
-    return `systems/wrath-and-glory/template/item/${this.item.type}.html`
+    return `systems/rogue-trader/template/item/${this.item.type}.html`
   }
 
   _getHeaderButtons() {
@@ -214,7 +214,7 @@ async _handleEnrichment()
         ui.notifications.error("Effects can only be added to world items or actors directly")
       let effectData = { label: this.item.name, icon: this.item.img }
 
-        let html = await renderTemplate("systems/wrath-and-glory/template/apps/quick-effect.html", effectData)
+        let html = await renderTemplate("systems/rogue-trader/template/apps/quick-effect.html", effectData)
         let dialog = new Dialog({
             title : "Quick Effect",
             content : html,

@@ -1,7 +1,7 @@
 
 export default class WrathANdGloryCombatTracker extends CombatTracker {
     get template() {
-        return "systems/wrath-and-glory/template/apps/combat-tracker.html"
+        return "systems/rogue-trader/template/apps/combat-tracker.html"
     }
 
     async getData() {

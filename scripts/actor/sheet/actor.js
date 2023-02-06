@@ -5,7 +5,7 @@ export class WrathAndGloryActorSheet extends ActorSheet {
 
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            classes: ["wrath-and-glory", "sheet", "actor"],
+            classes: ["rogue-trader", "sheet", "actor"],
             width: 720,
             height: 800,
             resizable: true,
@@ -21,7 +21,7 @@ export class WrathAndGloryActorSheet extends ActorSheet {
     }
 
     get template() {
-        return `systems/wrath-and-glory/template/actor/${this.actor.type}.html`
+        return `systems/rogue-trader/template/actor/${this.actor.type}.html`
     }
 
     async getData() {
@@ -31,7 +31,7 @@ export class WrathAndGloryActorSheet extends ActorSheet {
         this.constructItemLists(sheetData)
         this.constructEffectLists(sheetData)
         this._organizeSkills(sheetData)
-        sheetData.autoCalc = this.actor.getFlag("wrath-and-glory", "autoCalc") || {}
+        sheetData.autoCalc = this.actor.getFlag("rogue-trader", "autoCalc") || {}
         if (this.actor.type == "threat") {
             sheetData.autoCalc.wounds = false;
             sheetData.autoCalc.shock = false;
@@ -317,7 +317,7 @@ export class WrathAndGloryActorSheet extends ActorSheet {
             effectData["duration.rounds"] = 1;
         }
 
-        let html = await renderTemplate("systems/wrath-and-glory/template/apps/quick-effect.html")
+        let html = await renderTemplate("systems/rogue-trader/template/apps/quick-effect.html")
         let dialog = new Dialog({
             title: "Quick Effect",
             content: html,

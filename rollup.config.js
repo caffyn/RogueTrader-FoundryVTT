@@ -29,7 +29,7 @@ export default {
                 {src : "./system.json", dest : systemPath},
                 {src : "./static/*", dest : systemPath},
             ],
-            watch: process.env.NODE_ENV == "production" ? false : ["./static/*/**", "system.json", "template.json"]
+            // watch: process.env.NODE_ENV == "production" ? false : ["./static/*/**", "system.json", "template.json"]
         }),
         postcss({
             extract : `${manifest.id}.css`,

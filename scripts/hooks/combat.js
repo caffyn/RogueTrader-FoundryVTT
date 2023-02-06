@@ -3,7 +3,7 @@ export default function() {
         if (combat.current.round == 1 && combat.current.turn == 0)
         {
             let chatData = {
-                content : `<div class="wrath-and-glory chat"><h3>New Combat - Battlecries</h3>`
+                content : `<div class="rogue-trader chat"><h3>New Combat - Battlecries</h3>`
             }
             //ChatMessage.applyRollMode(chatData, "gmroll")
             let postMessage = false

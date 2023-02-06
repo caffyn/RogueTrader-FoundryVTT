@@ -4,8 +4,8 @@ export class PartySheet extends WrathAndGloryActorSheet {
 
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            classes: ["wrath-and-glory", "sheet", "actor"],
-            template: "systems/wrath-and-glory/template/actor/party.html",
+            classes: ["rogue-trader", "sheet", "actor"],
+            template: "systems/rogue-trader/template/actor/party.html",
             width: 700,
             height: 1000,
             resizable: false,

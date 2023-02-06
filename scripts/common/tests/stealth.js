@@ -7,7 +7,7 @@ export default class StealthRoll extends WNGTest {
   }
 
   get template() {
-    return "systems/wrath-and-glory/template/chat/roll/stealth/stealth-roll.html"
+    return "systems/rogue-trader/template/chat/roll/stealth/stealth-roll.html"
   }
 
   async rollTest() {

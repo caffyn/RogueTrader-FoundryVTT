@@ -1,14 +1,14 @@
-.wrath-and-glory.sheet.actor .tab[data-tab="gear"] {
+.rogue-trader.sheet.actor .tab[data-tab="gear"] {
   height: 100%
 }
 
-.wrath-and-glory.sheet.actor .gear {
+.rogue-trader.sheet.actor .gear {
   display: flex;
   flex-direction: column;
   height:100%
 }
 
-.wrath-and-glory.sheet.actor .gear .wrapper {
+.rogue-trader.sheet.actor .gear .wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,40 +16,40 @@
   align-items: start;
 }
 
-.wrath-and-glory.sheet.actor .gear .wrapper.influence-wealth {
+.rogue-trader.sheet.actor .gear .wrapper.influence-wealth {
   margin-bottom: -30px;
   justify-content: space-between;
   flex-basis: unset;
 }
 
-.wrath-and-glory.sheet.actor .gear .wrapper .influence {
+.rogue-trader.sheet.actor .gear .wrapper .influence {
   display: flex;
   flex-direction: row;
 }
-.wrath-and-glory.sheet.actor .gear .wrapper .wealth {
+.rogue-trader.sheet.actor .gear .wrapper .wealth {
   display: flex;
   flex-direction: row;
 }
 
-.wrath-and-glory.sheet.actor .gear .wrapper .influence label,
-.wrath-and-glory.sheet.actor .gear .wrapper .wealth label {
+.rogue-trader.sheet.actor .gear .wrapper .influence label,
+.rogue-trader.sheet.actor .gear .wrapper .wealth label {
   width: 70px;
 }
 
-.wrath-and-glory.sheet.actor .gear .wrapper .wealth label {
+.rogue-trader.sheet.actor .gear .wrapper .wealth label {
   cursor: default;
 }
 
-.wrath-and-glory.sheet.actor .gear .wrapper .influence input,
-.wrath-and-glory.sheet.actor .gear .wrapper .wealth input {
+.rogue-trader.sheet.actor .gear .wrapper .influence input,
+.rogue-trader.sheet.actor .gear .wrapper .wealth input {
   width: 50px;
 }
 
-.wrath-and-glory.sheet.actor .gear .wrapper.gear-list {
+.rogue-trader.sheet.actor .gear .wrapper.gear-list {
   pointer-events: none;
 }
 
-.wrath-and-glory.sheet.actor .pointer-enable-wrapper {
+.rogue-trader.sheet.actor .pointer-enable-wrapper {
   pointer-events: all;
   display: flex;
   flex-direction: column;

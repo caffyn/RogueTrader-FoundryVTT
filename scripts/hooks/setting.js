@@ -1,6 +1,6 @@
 export default function () {
   Hooks.on("updateSetting", (setting) => {
-    if(setting.key == "wrath-and-glory.glory" || setting.key == "wrath-and-glory.ruin")
+    if(setting.key == "rogue-trader.glory" || setting.key == "rogue-trader.ruin")
     {
       game.counter.render(true)
     }

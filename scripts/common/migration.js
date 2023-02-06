@@ -1,6 +1,6 @@
 export async function migrateWorld() {
     const schemaVersion = 7;
-    const worldSchemaVersion = Number(game.settings.get("wrath-and-glory", "worldSchemaVersion"));
+    const worldSchemaVersion = Number(game.settings.get("rogue-trader", "worldSchemaVersion"));
     if (worldSchemaVersion !== schemaVersion && game.user.isGM) {
         ui.notifications.info("Upgrading the world, please wait...");
             for (let actor of game.actors.contents) {
@@ -26,7 +26,7 @@ export async function migrateWorld() {
                     console.error(e);
                 }
             }
-        game.settings.set("wrath-and-glory", "worldSchemaVersion", schemaVersion);
+        game.settings.set("rogue-trader", "worldSchemaVersion", schemaVersion);
         ui.notifications.info("Upgrade complete!");
     }
 };
@@ -64,12 +64,12 @@ function migrateItemData(item) {
 function migrateEffectData(effect)
 {
     let effectData = effect.toObject()
-    let description = getProperty(effectData, "flags.wrath-and-glory.description")
+    let description = getProperty(effectData, "flags.rogue-trader.description")
     effectData.changes.forEach((change, i) => {
         if (change.mode == 0)
         {
             change.mode = 6
-            setProperty(effectData, `flags.wrath-and-glory.changeCondition.${i}`, {description, script:""})
+            setProperty(effectData, `flags.rogue-trader.changeCondition.${i}`, {description, script:""})
         }
     })
     return effectData

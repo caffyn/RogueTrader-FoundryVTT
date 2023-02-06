@@ -14,7 +14,7 @@ export default class BugReportFormWNG extends Application {
         ]
 
         this.domainKeys = [
-            "wrath-and-glory",
+            "rogue-trader",
             "wng-core",
             "wng-forsaken",
             "wng-litanies",
@@ -22,7 +22,7 @@ export default class BugReportFormWNG extends Application {
         ]
 
         this.domainKeysToLabel = {
-            "wrath-and-glory" : "system",
+            "rogue-trader" : "system",
             "wng-core" : "core",
             "wng-forsaken" : "forsaken",
             "wng-litanies" : "litanies",
@@ -33,8 +33,8 @@ export default class BugReportFormWNG extends Application {
     static get defaultOptions() {
         const options = super.defaultOptions;
         options.id = "bug-report";
-        options.template = "systems/wrath-and-glory/template/apps/bug-report.html"
-        options.classes.push("wrath-and-glory", "wng-bug-report");
+        options.template = "systems/rogue-trader/template/apps/bug-report.html"
+        options.classes.push("rogue-trader", "wng-bug-report");
         options.resizable = true;
         options.width = 600;
         options.minimizable = true;
@@ -46,7 +46,7 @@ export default class BugReportFormWNG extends Application {
     getData() {
         let data = super.getData();
         data.domains = this.domains;
-        data.name = game.settings.get("wrath-and-glory", "bugReportName")
+        data.name = game.settings.get("rogue-trader", "bugReportName")
         return data;
     }
 
@@ -111,11 +111,11 @@ export default class BugReportFormWNG extends Application {
             if (label)
                 data.labels.push(label);
 
-            game.settings.set("wrath-and-glory", "bugReportName", data.issuer);
+            game.settings.set("rogue-trader", "bugReportName", data.issuer);
 
             let officialModules = Array.from(game.modules).filter(m => this.domainKeys.includes(m[0]))
             
-            let versions = `<br/>wrath-and-glory: ${game.system.version}`
+            let versions = `<br/>rogue-trader: ${game.system.version}`
 
             for (let mod of officialModules)
             {

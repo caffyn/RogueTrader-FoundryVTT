@@ -28,17 +28,17 @@ export class WrathAndGloryActor extends Actor {
             "prototypeToken.displayBars": CONST.TOKEN_DISPLAY_MODES.OWNER_HOVER,
             "prototypeToken.disposition": CONST.TOKEN_DISPOSITIONS.NEUTRAL,
             "prototypeToken.name": data.name,
-            "flags.wrath-and-glory.autoCalc.defence": true,
-            "flags.wrath-and-glory.autoCalc.resilience": true,
-            "flags.wrath-and-glory.autoCalc.shock": true,
-            "flags.wrath-and-glory.autoCalc.awareness": true,
-            "flags.wrath-and-glory.autoCalc.resolve": true,
-            "flags.wrath-and-glory.autoCalc.determination": true,
-            "flags.wrath-and-glory.autoCalc.wounds": true,
-            "flags.wrath-and-glory.autoCalc.conviction": true,
-            "flags.wrath-and-glory.autoWounded": true,
-            "flags.wrath-and-glory.autoExhausted": true,
-            "flags.wrath-and-glory.generateMetaCurrencies": true
+            "flags.rogue-trader.autoCalc.defence": true,
+            "flags.rogue-trader.autoCalc.resilience": true,
+            "flags.rogue-trader.autoCalc.shock": true,
+            "flags.rogue-trader.autoCalc.awareness": true,
+            "flags.rogue-trader.autoCalc.resolve": true,
+            "flags.rogue-trader.autoCalc.determination": true,
+            "flags.rogue-trader.autoCalc.wounds": true,
+            "flags.rogue-trader.autoCalc.conviction": true,
+            "flags.rogue-trader.autoWounded": true,
+            "flags.rogue-trader.autoExhausted": true,
+            "flags.rogue-trader.generateMetaCurrencies": true
         }
         if (data.type === "agent") {
             initData["prototypeToken.vision"] = true;
@@ -145,7 +145,7 @@ export class WrathAndGloryActor extends Actor {
     }
 
     _computeCombat() {
-        let autoCalc = this.getFlag("wrath-and-glory", "autoCalc") || {}
+        let autoCalc = this.getFlag("rogue-trader", "autoCalc") || {}
 
         if (autoCalc.awareness)
             this.combat.passiveAwareness.total = this._setDefault(Math.ceil(this.skills.awareness.total / 2) + this.combat.passiveAwareness.bonus, 1);

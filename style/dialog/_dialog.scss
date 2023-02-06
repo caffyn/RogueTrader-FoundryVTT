@@ -3,7 +3,7 @@
 }
 
 .roll-dialog h1,
-  .wrath-and-glory.dialog h1 {
+  .rogue-trader.dialog h1 {
   margin: 0;
   border-style: solid;
   border-width: 0px 8px 8px 8px;
@@ -15,7 +15,7 @@
   padding: 0 30px;
 }
 
-.wrath-and-glory.dialog label  {
+.rogue-trader.dialog label  {
   text-align: center;
   background-color: var(--color-black);
   color: var(--color-white);
@@ -26,13 +26,13 @@
   height: 31px;
 }
 
-.wrath-and-glory.dialog .hover:hover {
+.rogue-trader.dialog .hover:hover {
   background-color: var(--color-red);
 }
 
-.wrath-and-glory.dialog input[type="text"],
-.wrath-and-glory.dialog input[type="number"],
-.wrath-and-glory.dialog select {
+.rogue-trader.dialog input[type="text"],
+.rogue-trader.dialog input[type="number"],
+.rogue-trader.dialog select {
   background: var(--image-input) repeat;
   border: 1px solid var(--color-black);
   border-radius: 0;
@@ -45,7 +45,7 @@
   height: 31px;
 }
 
-.wrath-and-glory.dialog {
+.rogue-trader.dialog {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
@@ -79,12 +79,12 @@
   height: calc(100% - 50px)
 }
 
-/* .wrath-and-glory.dialog.power-dialog,
-  .wrath-and-glory.dialog.weapon-dialog {
+/* .rogue-trader.dialog.power-dialog,
+  .rogue-trader.dialog.weapon-dialog {
   flex-direction: column;
 } */
 
-.wrath-and-glory.dialog .wrapper-left {
+.rogue-trader.dialog .wrapper-left {
   display: flex;
   flex-direction: column;
   flex-basis: calc(50% - 4px);
@@ -93,7 +93,7 @@
   align-self: baseline;
 }
 
-.wrath-and-glory.dialog .wrapper-right {
+.rogue-trader.dialog .wrapper-right {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -103,36 +103,36 @@
   align-self: baseline;
 }
 
-.wrath-and-glory.dialog .wrapper {
+.rogue-trader.dialog .wrapper {
   display: flex;
   flex-direction: row;
   margin-top: 8px;
   text-align: center;
 }
 
-.wrath-and-glory.dialog .wrapper .name {
+.rogue-trader.dialog .wrapper .name {
   flex-basis: 30%;
 }
 
-.wrath-and-glory.dialog .wrapper .rank {
+.rogue-trader.dialog .wrapper .rank {
   width: 95px;
 }
 
-.wrath-and-glory.dialog .wrapper .distance,
-.wrath-and-glory.dialog .wrapper .bonus ,
-  .wrath-and-glory.dialog .wrapper .base {
+.rogue-trader.dialog .wrapper .distance,
+.rogue-trader.dialog .wrapper .bonus ,
+  .rogue-trader.dialog .wrapper .base {
   flex-basis: 15%;
 }
 
-.wrath-and-glory.dialog .wrapper .full {
+.rogue-trader.dialog .wrapper .full {
   flex-basis: 70%;
 }
 
 
-.wrath-and-glory.dialog .wrapper .range {
+.rogue-trader.dialog .wrapper .range {
   flex: 0.5
 }
 
-.wrath-and-glory.dialog .wrapper .die {
+.rogue-trader.dialog .wrapper .die {
   flex-basis: calc(70% / 6);
 }

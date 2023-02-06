@@ -5,9 +5,9 @@ export default function () {
 
     game.counter = new game.wng.RuinGloryCounter()
 
-    game.socket.on("system.wrath-and-glory", async data => {
+    game.socket.on("system.rogue-trader", async data => {
       if (data.type == "setCounter" && game.user.isGM) {
-        game.settings.set("wrath-and-glory", data.payload.type, data.payload.value)
+        game.settings.set("rogue-trader", data.payload.type, data.payload.value)
       }
     })
 

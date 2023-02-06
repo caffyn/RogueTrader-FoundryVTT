@@ -1,4 +1,4 @@
-.wrath-and-glory.sheet.actor .settings {
+.rogue-trader.sheet.actor .settings {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -7,7 +7,7 @@
 
 /* BODY */
 
-.wrath-and-glory.sheet.actor .settings .wrapper {
+.rogue-trader.sheet.actor .settings .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,25 +16,25 @@
   flex: 1
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .header {
+.rogue-trader.sheet.actor .settings .wrapper .header {
   display: flex;
   flex-direction: row;
   margin-top: 8px;
   text-align: center;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper.attributes .header,
-.wrath-and-glory.sheet.actor .settings .wrapper.skills .header {
+.rogue-trader.sheet.actor .settings .wrapper.attributes .header,
+.rogue-trader.sheet.actor .settings .wrapper.skills .header {
   margin-left: -4px;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper.talents .header,
-.wrath-and-glory.sheet.actor .settings .wrapper.abilities .header,
-.wrath-and-glory.sheet.actor .settings .wrapper.psychic-power .header {
+.rogue-trader.sheet.actor .settings .wrapper.talents .header,
+.rogue-trader.sheet.actor .settings .wrapper.abilities .header,
+.rogue-trader.sheet.actor .settings .wrapper.psychic-power .header {
   margin-left: -13px;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .items {
+.rogue-trader.sheet.actor .settings .wrapper .items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -44,7 +44,7 @@
   align-content: baseline;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .items .item {
+.rogue-trader.sheet.actor .settings .wrapper .items .item {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
@@ -53,22 +53,22 @@
   align-items: baseline;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .items .item:first-child {
+.rogue-trader.sheet.actor .settings .wrapper .items .item:first-child {
   margin-top: 0;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .header .name,
-.wrath-and-glory.sheet.actor .settings .wrapper .items .item .name {
+.rogue-trader.sheet.actor .settings .wrapper .header .name,
+.rogue-trader.sheet.actor .settings .wrapper .items .item .name {
   flex-basis: 80%;
   cursor: default;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .header .item-name {
+.rogue-trader.sheet.actor .settings .wrapper .header .item-name {
   margin-left: 3px;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .header .item-name,
-.wrath-and-glory.sheet.actor .settings .wrapper .items .item .item-name {
+.rogue-trader.sheet.actor .settings .wrapper .header .item-name,
+.rogue-trader.sheet.actor .settings .wrapper .items .item .item-name {
   flex-basis: 93%;
   text-align: center;
   max-width: 206px;
@@ -77,14 +77,14 @@
   text-overflow: ellipsis;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .header .rating,
-.wrath-and-glory.sheet.actor .settings .wrapper .items .item .rating {
+.rogue-trader.sheet.actor .settings .wrapper .header .rating,
+.rogue-trader.sheet.actor .settings .wrapper .items .item .rating {
   flex-basis: 20%;
   text-align: center;
 }
 
-.wrath-and-glory.sheet.actor .settings .wrapper .header .button,
-.wrath-and-glory.sheet.actor .settings .wrapper .items .item .button {
+.rogue-trader.sheet.actor .settings .wrapper .header .button,
+.rogue-trader.sheet.actor .settings .wrapper .items .item .button {
   flex-basis: 7%;
   text-align: center;
 }

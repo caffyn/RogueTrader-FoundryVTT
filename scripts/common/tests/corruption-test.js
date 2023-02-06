@@ -7,7 +7,7 @@ export default class CorruptionTest  extends WNGTest {
   }
 
   get template() {
-    return "systems/wrath-and-glory/template/chat/roll/corruption/corruption-roll.html"
+    return "systems/rogue-trader/template/chat/roll/corruption/corruption-roll.html"
   }
 
 

@@ -1,8 +1,8 @@
-.wrath-and-glory.sheet.actor .tab[data-tab="stats"] h1 {
+.rogue-trader.sheet.actor .tab[data-tab="stats"] h1 {
   align-self: center;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper {
+.rogue-trader.sheet.actor .stats .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,121 +11,121 @@
 
 /* ATTRIBUTES */
 
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes {
+.rogue-trader.sheet.actor .stats .wrapper .attributes {
   display: flex;
   margin-top: 8px;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes .attribute {
+.rogue-trader.sheet.actor .stats .wrapper .attributes .attribute {
   display: flex;
   flex-direction: column;
   margin: 0 4px;
   flex: 1
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs{
+.rogue-trader.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs{
   display: flex;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs .attribute-input-stack{
+.rogue-trader.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs .attribute-input-stack{
   display: flex;
   flex-direction: column;
 }
 
 
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs > *{
+.rogue-trader.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs > *{
   flex: 1;
 }
 
 
 
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes .attribute .fake-input,
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes .attribute input {
+.rogue-trader.sheet.actor .stats .wrapper .attributes .attribute .fake-input,
+.rogue-trader.sheet.actor .stats .wrapper .attributes .attribute input {
   border: 1px solid var(--color-black);
   border-top: 0 none;
   height: unset;
   width: 100%
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper   .fake-input {
+.rogue-trader.sheet.actor .stats .wrapper   .fake-input {
   padding-top: 5px;
 }
 
 /* SKILLS */
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills {
+.rogue-trader.sheet.actor .stats .wrapper .skills {
   display: flex;
   flex-direction: row;
   margin-top: 8px;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills >*{
+.rogue-trader.sheet.actor .stats .wrapper .skills >*{
   display: flex;
   flex-direction: column;
   flex: 1
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .left {
+.rogue-trader.sheet.actor .stats .wrapper .skills .left {
   margin-right: 4px;
 }
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .right {
+.rogue-trader.sheet.actor .stats .wrapper .skills .right {
   margin-left: 4px;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .skill {
+.rogue-trader.sheet.actor .stats .wrapper .skills .skill {
   display: flex;
   flex-direction: row;
   margin: 3px 0;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .skill .skill-inputs {
+.rogue-trader.sheet.actor .stats .wrapper .skills .skill .skill-inputs {
   display: flex;
   flex:1
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .skill .skill-inputs > *{
+.rogue-trader.sheet.actor .stats .wrapper .skills .skill .skill-inputs > *{
   flex: 1
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs .total,
-  .wrath-and-glory.sheet.actor .stats .wrapper .skills .skill .skill-inputs .total{
+.rogue-trader.sheet.actor .stats .wrapper .attributes .attribute .attribute-inputs .total,
+  .rogue-trader.sheet.actor .stats .wrapper .skills .skill .skill-inputs .total{
   color: var(--color-imperium)
 }
 
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .skill:last-child {
+.rogue-trader.sheet.actor .stats .wrapper .skills .skill:last-child {
   margin-bottom: 0;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .skill label {
+.rogue-trader.sheet.actor .stats .wrapper .skills .skill label {
   flex: 2;
   display: flex;
   justify-content: space-between;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .skill label > span {
+.rogue-trader.sheet.actor .stats .wrapper .skills .skill label > span {
   opacity : 0.5;
   flex: 0 0 40px;
 }
 
-.wrath-and-glory.sheet.actor .stats .wrapper .skills .skill .fake-input,
-  .wrath-and-glory.sheet.actor .stats .wrapper .skills .skill input {
+.rogue-trader.sheet.actor .stats .wrapper .skills .skill .fake-input,
+  .rogue-trader.sheet.actor .stats .wrapper .skills .skill input {
   flex: 1;
 }
 
 
-.wrath-and-glory.sheet.actor .stats .adv-buttons {
+.rogue-trader.sheet.actor .stats .adv-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: -23px;
 }
 
-.wrath-and-glory.sheet.actor .stats .adv-buttons button {
+.rogue-trader.sheet.actor .stats .adv-buttons button {
   flex: 0 0 25px;
   margin: 0px;
 }
 
-.wrath-and-glory.actor .fake-input button{
+.rogue-trader.actor .fake-input button{
     line-height: 27px;
     box-shadow: none;
     background-color: var(--color-red);
@@ -138,21 +138,21 @@
     cursor: pointer;
 }
 
-.wrath-and-glory.actor .fake-input button.rm-right-border{
+.rogue-trader.actor .fake-input button.rm-right-border{
   border-right: none
 }
 
 
-.wrath-and-glory.actor .fake-input button.rm-left-morder{
+.rogue-trader.actor .fake-input button.rm-left-morder{
   border-left: none
 }
 
-.wrath-and-glory.actor .fake-input button.rm-top-border{
+.rogue-trader.actor .fake-input button.rm-top-border{
   border-top: none
 }
 
 
-.wrath-and-glory.actor .fake-input button.rm-bottom-morder{
+.rogue-trader.actor .fake-input button.rm-bottom-morder{
   border-bottom: none
 }
 

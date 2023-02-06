@@ -25,8 +25,8 @@ export default function() {
     });
     
     CONFIG.ChatMessage.documentClass.prototype.getTest = function () {
-        if (hasProperty(this, "data.flags.wrath-and-glory.testData"))
-          return game.wng.rollClasses.WNGTest.recreate(this.getFlag("wrath-and-glory", "testData"))
+        if (hasProperty(this, "data.flags.rogue-trader.testData"))
+          return game.wng.rollClasses.WNGTest.recreate(this.getFlag("rogue-trader", "testData"))
       }
 
     FoundryOverrides();

@@ -3,7 +3,7 @@ export default class RuinGloryCounter extends Application {
       const options = super.defaultOptions;
       options.title = "Glory & Ruin Counter";
       options.id = 'counter';
-      options.template = 'systems/wrath-and-glory/template/apps/counter.html';
+      options.template = 'systems/rogue-trader/template/apps/counter.html';
       return options;
     }
     /* -------------------------------------------- */
@@ -13,17 +13,17 @@ export default class RuinGloryCounter extends Application {
      */
     getData() {
       const data = super.getData();
-      data.glory = game.settings.get('wrath-and-glory', 'glory');
-      data.ruin = game.settings.get('wrath-and-glory', 'ruin');
+      data.glory = game.settings.get('rogue-trader', 'glory');
+      data.ruin = game.settings.get('rogue-trader', 'ruin');
       data.canEdit =
-        game.user.isGM || game.settings.get('wrath-and-glory', 'playerCounterEdit');
+        game.user.isGM || game.settings.get('rogue-trader', 'playerCounterEdit');
   
       return data;
     }
 
     render(force=false, options={})
     {
-      let userPosition = game.settings.get("wrath-and-glory", "counterPosition")
+      let userPosition = game.settings.get("rogue-trader", "counterPosition")
       if (userPosition.hide)
         return
       options.top = userPosition.top || window.innerHeight - 200
@@ -39,7 +39,7 @@ export default class RuinGloryCounter extends Application {
 
     setPosition(...args) {
       super.setPosition(...args);
-      game.settings.set("wrath-and-glory", "counterPosition", this.position)
+      game.settings.set("rogue-trader", "counterPosition", this.position)
     }
 
     // close(){
@@ -86,14 +86,14 @@ export default class RuinGloryCounter extends Application {
       value = Math.round(value);
   
       if (!game.user.isGM) {
-        game.socket.emit('system.wrath-and-glory', {
+        game.socket.emit('system.rogue-trader', {
           type: 'setCounter',
           payload: {value, type},
         });
       }
       else
       {
-        game.settings.set('wrath-and-glory', type, value);
+        game.settings.set('rogue-trader', type, value);
       }
   
       return value
@@ -105,14 +105,14 @@ export default class RuinGloryCounter extends Application {
      * @param type  Type of counter, "momentum" or "doom"
      */
     static async changeCounter(diff, type) {
-      let value = game.settings.get('wrath-and-glory', type);
+      let value = game.settings.get('rogue-trader', type);
       return await RuinGloryCounter.setCounter(value + diff, type)
     }
 
 
     static getValue(type)
     {
-        return game.settings.get('wrath-and-glory', type);
+        return game.settings.get('rogue-trader', type);
     }
 
     get glory()
@@ -133,9 +133,9 @@ export default class RuinGloryCounter extends Application {
     button.on("click", () => {
 
       // Retain show/hide on refresh by storing in settings
-      position = game.settings.get("wrath-and-glory", "counterPosition")
+      position = game.settings.get("rogue-trader", "counterPosition")
       position.hide = game.counter.rendered;
-      game.settings.set("wrath-and-glory", "counterPosition", position);
+      game.settings.set("rogue-trader", "counterPosition", position);
       
       game.counter.rendered ? game.counter.close() : game.counter.render(true);
     })

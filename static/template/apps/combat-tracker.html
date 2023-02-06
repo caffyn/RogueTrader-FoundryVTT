@@ -62,7 +62,7 @@
         {{#if current.length}}
         <h1>Current</h1>
         {{#each current}}
-        {{> systems/wrath-and-glory/template/apps/combatant-list.html combatant=this}}
+        {{> systems/rogue-trader/template/apps/combatant-list.html combatant=this}}
         {{/each}}
         {{else if combat.round}}
         <h2>Select a Combatant</h2> 
@@ -71,7 +71,7 @@
         {{#if pending.length}}
         <h1>Pending</h1>
         {{#each pending}}
-            {{> systems/wrath-and-glory/template/apps/combatant-list.html combatant=this}}
+            {{> systems/rogue-trader/template/apps/combatant-list.html combatant=this}}
         {{/each}}
         {{/if}}
 
@@ -79,7 +79,7 @@
         <h1>Complete</h1>
         <div style="opacity: 0.5">
             {{#each complete}}
-            {{> systems/wrath-and-glory/template/apps/combatant-list.html combatant=this}}
+            {{> systems/rogue-trader/template/apps/combatant-list.html combatant=this}}
             {{/each}}
             {{/if}}
         </div>
@@ -87,7 +87,7 @@
         {{#if defeated.length}}
         <h1>Defeated</h1>
         {{#each defeated}}
-        {{> systems/wrath-and-glory/template/apps/combatant-list.html combatant=this}}
+        {{> systems/rogue-trader/template/apps/combatant-list.html combatant=this}}
         {{/each}}
         {{/if}}
     </ol>

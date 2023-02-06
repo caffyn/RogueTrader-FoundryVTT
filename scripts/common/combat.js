@@ -42,45 +42,45 @@ export class WrathAndGloryCombatant extends Combatant {
             this.updateSource({"defeated" : true})
         }
         // "pending" , "complete", "current"
-        this.updateSource({"flags.wrath-and-glory.combatStatus" : "pending", "turn" : null})
+        this.updateSource({"flags.rogue-trader.combatStatus" : "pending", "turn" : null})
     }
 
 
 
     get isCurrent() 
     {
-        return this.getFlag("wrath-and-glory", "combatStatus") == "current" && !this.isDefeated
+        return this.getFlag("rogue-trader", "combatStatus") == "current" && !this.isDefeated
     }
 
     get isPending()
     {
-        return this.getFlag("wrath-and-glory", "combatStatus") == "pending" && !this.isDefeated
+        return this.getFlag("rogue-trader", "combatStatus") == "pending" && !this.isDefeated
     }
 
     get isComplete()
     {
-        return this.getFlag("wrath-and-glory", "combatStatus") == "complete" && !this.isDefeated
+        return this.getFlag("rogue-trader", "combatStatus") == "complete" && !this.isDefeated
     }
 
     
     setCurrent() 
     {
         let data = this.toObject()
-        setProperty(data, "flags.wrath-and-glory.combatStatus", "current")
+        setProperty(data, "flags.rogue-trader.combatStatus", "current")
         return data
     }
 
     setPending()
     {
         let data = this.toObject()
-        setProperty(data, "flags.wrath-and-glory.combatStatus", "pending")
+        setProperty(data, "flags.rogue-trader.combatStatus", "pending")
         return data
     }
 
     setComplete()
     {
         let data = this.toObject()
-        setProperty(data, "flags.wrath-and-glory.combatStatus", "complete")
+        setProperty(data, "flags.rogue-trader.combatStatus", "complete")
         data.active = false;
         return data
     }

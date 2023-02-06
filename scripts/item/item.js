@@ -59,12 +59,12 @@ export class WrathAndGloryItem extends Item {
             item.img = null;
         }
 
-        const html = await renderTemplate("systems/wrath-and-glory/template/chat/item.html", { item, data: item.system });
+        const html = await renderTemplate("systems/rogue-trader/template/chat/item.html", { item, data: item.system });
         const chatData = {
             user: game.user.id,
             rollMode: game.settings.get("core", "rollMode"),
             content: html,
-            "flags.wrath-and-glory.itemData": this.toObject()
+            "flags.rogue-trader.itemData": this.toObject()
         };
         if (["gmroll", "blindroll"].includes(chatData.rollMode)) {
             chatData.whisper = ChatMessage.getWhisperRecipients("GM");

@@ -4,7 +4,7 @@ export default class ActorConfigure extends FormApplication
         return mergeObject(super.defaultOptions, {
             id: "actor-configure",
             title: "Configure Actor",
-            template : "systems/wrath-and-glory/template/apps/actor-configure.html",
+            template : "systems/rogue-trader/template/apps/actor-configure.html",
             width:300
         })
     }

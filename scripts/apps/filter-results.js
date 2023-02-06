@@ -8,7 +8,7 @@ export default class FilterResults extends FormApplication {
         let options = super.defaultOptions;
         options.classes.push("filter-results");
         options.title = "Filter Results";
-        options.template = "systems/wrath-and-glory/template/apps/filter-results.html",
+        options.template = "systems/rogue-trader/template/apps/filter-results.html",
         options.width = 300,
         options.height = 800,
         options.resizable = true

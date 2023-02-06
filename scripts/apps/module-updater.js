@@ -28,7 +28,7 @@ export default class ModuleUpdater extends Dialog {
 
     static async create(module)
     {
-        let html = await renderTemplate("systems/wrath-and-glory/template/apps/module-updater.html", module)
+        let html = await renderTemplate("systems/rogue-trader/template/apps/module-updater.html", module)
         return new this(module, html)
     }
 

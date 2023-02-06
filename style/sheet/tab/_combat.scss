@@ -1,62 +1,62 @@
-.wrath-and-glory.sheet.actor .tab[data-tab="combat"] h1 {
+.rogue-trader.sheet.actor .tab[data-tab="combat"] h1 {
   width: 200px;
 }
 
 
-.wrath-and-glory.sheet.actor .combat {
+.rogue-trader.sheet.actor .combat {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-basis: 100%;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper {
+.rogue-trader.sheet.actor .combat .wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper.general,
-.wrath-and-glory.sheet.actor .combat .wrapper.injuries,
-.wrath-and-glory.sheet.actor .combat .wrapper.mutation {
+.rogue-trader.sheet.actor .combat .wrapper.general,
+.rogue-trader.sheet.actor .combat .wrapper.injuries,
+.rogue-trader.sheet.actor .combat .wrapper.mutation {
   flex: 1;
   margin-right: 8px;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper.wargear {
+.rogue-trader.sheet.actor .combat .wrapper.wargear {
   flex-basis: 100%;
   margin-top: 8px;
   pointer-events:none;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper-item.faith {
+.rogue-trader.sheet.actor .combat .wrapper-item.faith {
   display: flex;
   flex-direction: row;
   margin-bottom: -33px;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper .wrapper-item {
+.rogue-trader.sheet.actor .combat .wrapper .wrapper-item {
   display: flex;
   flex-direction: row;
   margin-top: 2px;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper .wrapper-item label {
+.rogue-trader.sheet.actor .combat .wrapper .wrapper-item label {
   flex: 2;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper .wrapper-item .input-group,
-.wrath-and-glory.sheet.actor .combat .wrapper .wrapper-item input,
-.wrath-and-glory.sheet.actor .combat .wrapper .wrapper-item select {
+.rogue-trader.sheet.actor .combat .wrapper .wrapper-item .input-group,
+.rogue-trader.sheet.actor .combat .wrapper .wrapper-item input,
+.rogue-trader.sheet.actor .combat .wrapper .wrapper-item select {
   flex: 1
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper .wrapper-item .input-group {
+.rogue-trader.sheet.actor .combat .wrapper .wrapper-item .input-group {
   display: flex;
 }
 
 /* INJURIES */
 
-.wrath-and-glory.sheet.actor .combat .wrapper .injury-lists {
+.rogue-trader.sheet.actor .combat .wrapper .injury-lists {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -66,19 +66,19 @@
 
 /* MUTATION */
 
-.wrath-and-glory.sheet.actor .combat .wrapper .mutations {
+.rogue-trader.sheet.actor .combat .wrapper .mutations {
   max-height: 130px;
   overflow-y: auto;
 }
 
-.wrath-and-glory.sheet.actor .combat .wrapper .injury-lists .item-list,
-.wrath-and-glory.sheet.actor .combat .wrapper .mutations .item-list {
+.rogue-trader.sheet.actor .combat .wrapper .injury-lists .item-list,
+.rogue-trader.sheet.actor .combat .wrapper .mutations .item-list {
   margin-top: 2px;
 }
 
 
 
-.wrath-and-glory.sheet.actor .combat .wrapper.wargear {
+.rogue-trader.sheet.actor .combat .wrapper.wargear {
   display: flex;
   flex-direction: column;
   pointer-events: none;
